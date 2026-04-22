@@ -1,11 +1,9 @@
 module vidmot.goldrush {
     requires javafx.controls;
     requires javafx.fxml;
-    requires java.desktop;
     requires javafx.media;
-    requires javafx.graphics;
+    requires java.desktop;
 
-
-    opens vidmot to javafx.fxml, javafx.media;
+    opens vidmot to javafx.fxml;
     exports vidmot;
 }
