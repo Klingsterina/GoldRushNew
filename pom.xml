@@ -82,6 +82,11 @@
                 <version>0.0.8</version>
                 <configuration>
                     <mainClass>${module.name}/${main.class}</mainClass>
+                    <launcher>GoldRush</launcher>
+                    <jlinkImageName>GoldRush</jlinkImageName>
+                    <stripDebug>true</stripDebug>
+                    <noHeaderFiles>true</noHeaderFiles>
+                    <noManPages>true</noManPages>
                 </configuration>
             </plugin>
 
