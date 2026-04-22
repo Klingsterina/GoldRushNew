@@ -5,6 +5,9 @@ import javafx.scene.shape.Rectangle;
 
 import java.io.IOException;
 
+/**
+ * Represents a gold piece on the game board.
+ */
 public class Gull extends Rectangle {
 
     /**

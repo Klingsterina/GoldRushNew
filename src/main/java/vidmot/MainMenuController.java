@@ -9,9 +9,17 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import vinnsla.Leikur;
 
-
+/**
+ * Controller for the main menu screen.
+ */
 public class MainMenuController {
 
+    /** Default constructor. */
+    public MainMenuController() {}
+
+    /**
+     * Initializes the main menu controller.
+     */
     public void initialize() {
     }
 

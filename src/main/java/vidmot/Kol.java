@@ -5,7 +5,9 @@ import javafx.scene.shape.Rectangle;
 
 import java.io.IOException;
 
-
+/**
+ * Represents a coal piece on the game board.
+ */
 public class Kol extends Rectangle {
 
     /**

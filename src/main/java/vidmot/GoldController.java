@@ -16,8 +16,14 @@ import javafx.util.Duration;
 import vinnsla.Leikur;
 import vinnsla.Tonlist;
 import vinnsla.Spilari;
-
+/**
+ * Controller for the main game view.
+ */
 public class GoldController {
+
+    /** Default constructor. */
+    public GoldController() {}
+
     @FXML
     private Leikbord fxLeikbord;
     @FXML
@@ -236,6 +242,11 @@ public class GoldController {
         leikur.setErfidleikastig(erfidleikastig);
     }
 
+    /**
+     * Sets the stage used for scene switching.
+     *
+     * @param stage the primary stage
+     */
     public void setStage(Stage stage) {
         this.stage = stage;
     }

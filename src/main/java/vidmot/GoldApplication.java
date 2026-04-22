@@ -11,8 +11,10 @@ import java.io.IOException;
  * The main application class for the GoldRush game.
  * This class extends the Application class from JavaFX.
  */
-
 public class GoldApplication extends Application {
+
+    /** Default constructor. */
+    public GoldApplication() {}
 
     /**
      * The start method is called after the init method has returned,
@@ -31,6 +33,11 @@ public class GoldApplication extends Application {
         stage.show();
     }
 
+    /**
+     * The main entry point for the GoldRush application.
+     *
+     * @param args command-line arguments passed to the application
+     */
     public static void main(String[] args) {
         launch();
     }

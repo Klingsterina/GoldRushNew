@@ -16,6 +16,9 @@ import vinnsla.Tonlist;
 import java.io.IOException;
 import java.util.Random;
 
+/**
+ * The game board pane that manages players, gold, and coal.
+ */
 public class Leikbord extends Pane {
     private Grafari grafari1;
     private Grafari grafari2;
@@ -83,6 +86,11 @@ public class Leikbord extends Pane {
         kol.clear();
     }
 
+    /**
+     * Sets the game model for this board.
+     *
+     * @param leikur the game model
+     */
     public void setLeikur(Leikur leikur) {
         this.leikur = leikur;
     }
@@ -90,7 +98,7 @@ public class Leikbord extends Pane {
     /**
      * Update direction for Grafari 1
      *
-     * @param stefna
+     * @param stefna the movement direction for player 1
      */
     public void setStefna(Stefna stefna) {
         grafari1.setStefna(stefna);
@@ -99,7 +107,7 @@ public class Leikbord extends Pane {
     /**
      * Update direction for Grafari 2
      *
-     * @param stefna
+     * @param stefna the movement direction for player 2
      */
     public void setStefna2(Stefna stefna) {
         grafari2.setStefna(stefna);

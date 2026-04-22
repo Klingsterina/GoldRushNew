@@ -1,3 +1,4 @@
+/** Main module for the GoldRush application. */
 module vidmot.goldrush {
     requires javafx.controls;
     requires javafx.fxml;

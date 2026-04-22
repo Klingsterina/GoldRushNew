@@ -8,7 +8,14 @@ import vinnsla.Leikur;
 
 import java.util.Optional;
 
+/**
+ * Controller for the in-game menu bar.
+ */
 public class MenuController {
+
+    /** Default constructor. */
+    public MenuController() {}
+
     @FXML
     private GoldController goldController; // GoldController item
     @FXML
@@ -18,6 +25,9 @@ public class MenuController {
     @FXML
     private Menu fxFjoldiSpilara;
 
+    /**
+     * Initializes the menu controller.
+     */
     public void initialize() {
         RadioMenuItem twoPlayer = (RadioMenuItem) fxFjoldiSpilara.getItems().getLast();
         twoPlayer.setSelected(Leikur.tveirSpilarar);
@@ -36,6 +46,9 @@ public class MenuController {
 //        updateHiScore();
 //    }
 
+    /**
+     * Updates the high score display in the menu.
+     */
     public void updateHiScore() {
         hiscoreDisplay.setText("Hiscore: " + hiscoreManager.readHiScore());
     }

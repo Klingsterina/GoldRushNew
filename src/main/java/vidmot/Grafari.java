@@ -5,6 +5,9 @@ import javafx.scene.shape.Rectangle;
 
 import java.io.IOException;
 
+/**
+ * Represents a player character on the game board.
+ */
 public class Grafari extends Rectangle {
     private Stefna stefna = Stefna.KYRR; // Instance of enum Stefna
 
@@ -22,10 +25,20 @@ public class Grafari extends Rectangle {
         }
     }
 
+    /**
+     * Sets the movement direction of the player.
+     *
+     * @param stefna the direction to move
+     */
     public void setStefna(Stefna stefna) {
         this.stefna = stefna;
     }
 
+    /**
+     * Returns the current movement direction of the player.
+     *
+     * @return the current direction
+     */
     public Stefna getStefna() {
         return stefna;
     }

@@ -10,12 +10,20 @@ import javafx.scene.control.ButtonBar;
 
 import java.io.IOException;
 
+/**
+ * Dialog displayed when the game ends, showing the final score.
+ */
 public class LeiklokDialog extends Dialog<Void> {
     private Leikur leikur; // new instance of Leikur
     @FXML
     private Label fxLokastig; // Label for final score
     private HiscoreManager hiscoreManager = new HiscoreManager();
 
+    /**
+     * Creates the end-of-game dialog for the given game.
+     *
+     * @param leikur the finished game containing player scores
+     */
     public LeiklokDialog(Leikur leikur) {
         this.leikur = leikur;
         setTitle("Leik lokið!");
@@ -39,6 +47,9 @@ public class LeiklokDialog extends Dialog<Void> {
         initializeDialog();
     }
 
+    /**
+     * Populates the dialog with the final score/scores of the game.
+     */
     public void initializeDialog() {
         if (Leikur.tveirSpilarar) {
             fxLokastig.setText(
