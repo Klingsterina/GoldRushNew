@@ -1,13 +1,5 @@
 package vinnsla;
 
-
-/******************************************************************************
- *  Nafn: Silja Ástudóttir, tölvupóstur: sia62@hi.is
- *
- * Represents the game state in the GoldRush game.
- * This class manages the game's score, level, and other game-related data.
- * Has necessary getters and setters.
- */
 public class Leikur {
 
     private int erfidleikastig = 0; // 3 difficulty levels 0,1,2

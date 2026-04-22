@@ -10,14 +10,6 @@ import javafx.scene.control.ButtonBar;
 
 import java.io.IOException;
 
-/******************************************************************************
- *  Nafn: Silja Ástudóttir, tölvupóstur: sia62@hi.is
- *
- * Represents a dialog that is shown when a game ends.
- * This class extends Dialog and is used to display a game over message and score.
- *
- *****************************************************************************/
-
 public class LeiklokDialog extends Dialog<Void> {
     private Leikur leikur; // new instance of Leikur
     @FXML

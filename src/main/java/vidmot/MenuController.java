@@ -8,13 +8,6 @@ import vinnsla.Leikur;
 
 import java.util.Optional;
 
-/******************************************************************************
- *  Nafn: Silja Ástudóttir, tölvupóstur: sia62@hi.is
- *
- * Controller class for the game menu.
- * This class handles the game menu interactions and logic.
- *
- */
 public class MenuController {
     @FXML
     private GoldController goldController; // GoldController item

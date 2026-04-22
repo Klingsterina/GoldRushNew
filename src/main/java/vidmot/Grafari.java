@@ -5,13 +5,6 @@ import javafx.scene.shape.Rectangle;
 
 import java.io.IOException;
 
-/******************************************************************************
- *  Nafn: Silja Ástudóttir, tölvupóstur: sia62@hi.is
- *
- * Represents a player character in the GoldRush game.
- * This class extends Rectangle and is used to display the player character on the game board.
- *
- *****************************************************************************/
 public class Grafari extends Rectangle {
     private Stefna stefna = Stefna.KYRR; // Instance of enum Stefna
 

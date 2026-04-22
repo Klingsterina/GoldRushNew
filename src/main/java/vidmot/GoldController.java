@@ -17,29 +17,22 @@ import vinnsla.Leikur;
 import vinnsla.Tonlist;
 import vinnsla.Spilari;
 
-/******************************************************************************
- *  Nafn: Silja Ástudóttir, tölvupóstur: sia62@hi.is
- *
- *  Controller class for the GoldRush game.
- *  This class handles the game logic and user interactions.
- *
- */
 public class GoldController {
     @FXML
-    private Leikbord fxLeikbord; // Leikbord item
+    private Leikbord fxLeikbord;
     @FXML
-    private Label fxKlukka;     // Label for the clock
+    private Label fxKlukka;
     @FXML
-    private Label fxStig1;       // Label for the score for Player 1
+    private Label fxStig1;
     @FXML
-    private Label fxStig2;       // Label for the score for Player 2
+    private Label fxStig2;
     @FXML
-    private MenuController menuStyringController; // MenuController item
-    private final Leikur leikur = new Leikur(); // Leikur instance
-    private Timeline gulltimalina;  // Timeline for the gold
-    private Timeline kolatimalina;  // Timeline for the coal
-    private Timeline leiktimalina;  // Timeline for the gameloop
-    private Timeline klukkutimalina; // Timeline for the clock
+    private MenuController menuStyringController;
+    private final Leikur leikur = new Leikur();
+    private Timeline gulltimalina;
+    private Timeline kolatimalina;
+    private Timeline leiktimalina;
+    private Timeline klukkutimalina;
     private Stage stage;
     private final Tonlist tonlist = new Tonlist();
 

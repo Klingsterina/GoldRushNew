@@ -5,13 +5,6 @@ import javafx.scene.shape.Rectangle;
 
 import java.io.IOException;
 
-/******************************************************************************
- *  Nafn: Silja Ástudóttir, tölvupóstur: sia62@hi.is
- *
- * Represents a gold piece in the GoldRush game.
- * This class extends Rectangle and is used to display gold pieces on the game board.
- *
- *****************************************************************************/
 public class Gull extends Rectangle {
 
     /**

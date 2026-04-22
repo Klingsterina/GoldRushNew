@@ -3,14 +3,6 @@ package vinnsla;
 
 import javafx.beans.property.SimpleIntegerProperty;
 
-
-/******************************************************************************
- *  Nafn: Silja Ástudóttir, tölvupóstur: sia62@hi.is
- *
- * Represents a clock in the GoldRush game.
- * This class is used to manage the game timer.
- *
- */
 public class Klukka {
     private final SimpleIntegerProperty timi; // Simple Integer property for time
 

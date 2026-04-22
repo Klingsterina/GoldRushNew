@@ -5,13 +5,7 @@ import javafx.scene.shape.Rectangle;
 
 import java.io.IOException;
 
-/******************************************************************************
- *  Nafn: Silja Ástudóttir, tölvupóstur: sia62@hi.is
- *
- * Represents a coal piece in the GoldRush game.
- * This class extends Rectangle and is used to display coal pieces on the game board.
- *
- *****************************************************************************/
+
 public class Kol extends Rectangle {
 
     /**

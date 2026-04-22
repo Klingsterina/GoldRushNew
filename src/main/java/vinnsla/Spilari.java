@@ -7,13 +7,6 @@ import vidmot.Stefna;
 
 import java.util.HashMap;
 
-/******************************************************************************
- *  Nafn: Silja Ástudóttir, tölvupóstur: sia62@hi.is
- *
- *  This class is used to manage points for a player in the game
- *  as well as how the golddigger for said player moves on the gameboard.
- *
- *****************************************************************************/
 public class Spilari {
     public final HashMap<KeyCode, Stefna> attir = new HashMap<>(); // Makes a map for keycodes and directions for player 1
     public final HashMap<KeyCode, Boolean> virkirTakkar = new HashMap<>(); // Makes a map for registering currently held keys for player 1

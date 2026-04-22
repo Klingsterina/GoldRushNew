@@ -16,13 +16,6 @@ import vinnsla.Tonlist;
 import java.io.IOException;
 import java.util.Random;
 
-/******************************************************************************
- *  Nafn: Silja Ástudóttir, tölvupóstur: sia62@hi.is
- *
- * Represents the game board in the GoldRush game.
- * Extends Pane and is used to manage the game board layout and interactions.
- *
- *****************************************************************************/
 public class Leikbord extends Pane {
     private Grafari grafari1;
     private Grafari grafari2;
