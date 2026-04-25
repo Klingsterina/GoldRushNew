@@ -38,4 +38,4 @@ build/
 ### Mac OS ###
 .DS_Store
 
-src/main/hiscores.txt
+src/main/hiscores.txt.idea/
