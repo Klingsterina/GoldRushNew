@@ -2,7 +2,7 @@
 
 ## UML Class Diagram
 
-![UML Class Diagram](uml-diagram.png)
+![UML Class Diagram](../resources/uml-diagram.png)
 
 The project has two packages. The `vidmot` package contains all the UI classes: `GoldApplication`, `GoldController`, `MainMenuController`, `MenuController`, `Leikbord`, `Grafari`, `Gull`, `Kol`, `LeiklokDialog`, `HiScoreManager`, and the `Stefna` enum. The `vinnsla` package contains the business logic: `Leikur`, `Spilari`, `Klukka`, and `Tonlist`.
 
