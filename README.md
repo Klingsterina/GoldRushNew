@@ -1,6 +1,6 @@
 # GoldRush
 
-A two-player JavaFX game where players compete to collect as much gold as possible before the timer runs out. Avoid the coal — picking it up costs you points!
+A single/two-player JavaFX game where players compete to collect as much gold as possible before the timer runs out. Avoid the coal, picking it up costs you points!
 
 ## Requirements
 
