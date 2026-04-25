@@ -8,7 +8,17 @@
     <artifactId>GoldRush</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>GoldRush</name>
+    <url>https://github.com/Klingsterina/GoldRushNew</url>
+    <description>A two-player JavaFX game where players compete to collect gold while avoiding coal before the timer runs out.</description>
     <packaging>jar</packaging>
+    <developers>
+        <developer>
+            <name>Dagmar Ýr Eyþórsdóttir</name>
+        </developer>
+        <developer>
+            <name>Eygló Ástþórsdóttir</name>
+        </developer>
+    </developers>
     <licenses>
         <license>
             <name>MIT</name>
