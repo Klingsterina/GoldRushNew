@@ -7,4 +7,5 @@ module vidmot.goldrush {
 
     opens vidmot to javafx.fxml;
     exports vidmot;
+    exports vinnsla;
 }
