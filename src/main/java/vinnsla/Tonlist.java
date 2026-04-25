@@ -7,13 +7,13 @@ import java.net.URL;
 import java.util.Objects;
 
 /**
- * Þessi klasi heldur utan um tónlistina og sound effects í leiknum.
+ * Manages background music and sound effects in the game.
  */
 public class Tonlist {
     MediaPlayer mediaPlayer;
 
     /**
-     * Spilar bakgrunn tónlist á meðan leikurinn er í gangi.
+     * Plays background music while the game is running.
      */
     public void play() {
         String backgroundMusic = "backgroundMusic.mp3";
@@ -21,7 +21,7 @@ public class Tonlist {
     }
 
     /**
-     * Stoppar að spila bakground tónlistina
+     * Stops the background music.
      */
     public void stop() {
         if (this.mediaPlayer != null) {
@@ -30,7 +30,7 @@ public class Tonlist {
     }
 
     /**
-     * Spilar leik lokið tónlist þegar þegar leikurinn er búinn.
+     * Plays the game over music when the game ends.
      */
     public void gameOverMusic() {
         String gameOverTonlist = "gameOver.mp3";
@@ -38,7 +38,7 @@ public class Tonlist {
     }
 
     /**
-     * Spilar hljóð þegar kol er fundið
+     * Plays a sound effect when coal is collected.
      */
     public void kolFoundSound() {
         String kolSound = "kolSound.mp3";
@@ -46,7 +46,7 @@ public class Tonlist {
     }
 
     /**
-     * Spilar hljóð þegar gull er fundið
+     * Plays a sound effect when gold is collected.
      */
     public void gullFoundSound() {
         String gullSound = "gullSound.mp3";
@@ -54,9 +54,9 @@ public class Tonlist {
     }
 
     /**
-     * Aðferð sem heldur utan um hvort að hljóðið sé spilað einu sinni
+     * Plays a sound file once.
      *
-     * @param fileName Tekur inn nafnið á filenum sem er að spila
+     * @param fileName the name of the audio file to play
      */
     private void playOnceSound(String fileName) {
         URL resourceUrl = Objects.requireNonNull(getClass().getResource(fileName));
@@ -66,9 +66,9 @@ public class Tonlist {
     }
 
     /**
-     * Aðferð sem heldur utan um hvort að hljóðið sé spilað oftar en einu sinni
+     * Plays a sound file on repeat.
      *
-     * @param fileName Tekur inn nafnið á filenum sem er að spila
+     * @param fileName the name of the audio file to play
      */
     private void playHitSound(String fileName) {
         URL resourceUrl = Objects.requireNonNull(getClass().getResource(fileName));

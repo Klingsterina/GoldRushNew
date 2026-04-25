@@ -33,17 +33,17 @@ public class Leikbord extends Pane {
      */
     public Leikbord() {
         FXMLLoader fxmlLoader = new FXMLLoader(GoldApplication.class.getResource("leikbord-view.fxml"));
-        fxmlLoader.setRoot(this);   // rótin á viðmótstrénu sett hér
-        fxmlLoader.setController(this); // controllerinn settur hér en ekki í .fxml skránni
+        fxmlLoader.setRoot(this);   // root of the UI tree set here
+        fxmlLoader.setController(this); // controller set here instead of in the .fxml file
         try {
-            fxmlLoader.load();          // viðmótstréð lesið inn (þ.e. .fxml skráin)
+            fxmlLoader.load();          // UI tree loaded (i.e. the .fxml file)
         } catch (IOException exception) {
             System.err.println("Fann ekki leikbord-view.fxml");
         }
     }
 
     /**
-     * setjaBord prepares leikbord for a new game
+     * Prepares the board for a new game
      * Removes the gold and coal and relocates Grafari on leikbord
      */
     public void setjaBord() {
@@ -87,7 +87,7 @@ public class Leikbord extends Pane {
     }
 
     /**
-     * Sets the game model for this board.
+     * Sets the game model for this gameboard.
      *
      * @param leikur the game model
      */
@@ -114,7 +114,7 @@ public class Leikbord extends Pane {
     }
 
     /**
-     * Afram tells grafari in which direction and how far he should move
+     * Tells grafari in which direction and how far he should move
      */
     public void afram() {
         Spilari spilari1 = leikur.getSpilari1();
@@ -163,7 +163,7 @@ public class Leikbord extends Pane {
     }
 
     /**
-     * Produces more gold g randomly on leikbord
+     * Produces more gold g randomly on the gameboard
      */
     private void framleidaGull() {
         Gull g = new Gull();
@@ -270,7 +270,7 @@ public class Leikbord extends Pane {
 
     /**
      * Tries to find a random placement that does not collide with
-     * existing coal, gold, or golddiggers on the leikbord
+     * existing coal, gold, or golddiggers on the gameboard
      *
      * @param r Object to place
      * @return 2D point with placement coordinates
@@ -297,7 +297,7 @@ public class Leikbord extends Pane {
     }
 
     /**
-     * Produces more kol k randomly on leikbord
+     * Produces more kol k randomly on the gameboard
      */
     private void framleidaKol() {
         Kol k = new Kol();
@@ -320,7 +320,7 @@ public class Leikbord extends Pane {
     }
 
     /**
-     * innanBord used to make sure we are moving within our gameboard, leikbord
+     * innanBord used to make sure we are moving within our gameboard
      *
      * @param value value we are looking at
      * @param min   min number

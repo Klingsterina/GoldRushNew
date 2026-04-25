@@ -16,10 +16,10 @@ public class Grafari extends Rectangle {
      */
     public Grafari() {
         FXMLLoader fxmlLoader = new FXMLLoader(GoldApplication.class.getResource("grafari-view.fxml"));
-        fxmlLoader.setRoot(this);   // rótin á viðmótstrénu sett hér
-        fxmlLoader.setController(this); // controllerinn settur hér en ekki í .fxml skránni
+        fxmlLoader.setRoot(this);   // root of the UI tree set here
+        fxmlLoader.setController(this); // controller set here instead of in the .fxml file
         try {
-            fxmlLoader.load();          // viðmótstréð lesið inn (þ.e. .fxml skráin)
+            fxmlLoader.load();          // UI tree loaded (i.e. the .fxml file)
         } catch (IOException exception) {
             System.err.println("Fann ekki grafari-view.fxml");
         }

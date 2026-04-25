@@ -23,21 +23,21 @@ public class MainMenuController {
     public void initialize() {
     }
 
-    // Takkinn ef valið er einn leikmann
+    // Button handler for selecting one player
     @FXML
     private void handleOnePlayer(ActionEvent event) {
         Leikur.tveirSpilarar = false;
         swapToGame(event);
     }
 
-    // Takkinn ef valið er tvo leikmenn
+    // Button handler for selecting two players
     @FXML
     private void handleTwoPlayer(ActionEvent event) {
         Leikur.tveirSpilarar = true;
         swapToGame(event);
     }
 
-    //Method til þess að skipta yfir í goldrush view fxml
+    // Switches to the main game view
     private void swapToGame(ActionEvent event) {
         try {
             // Load the FXML for the sample scene

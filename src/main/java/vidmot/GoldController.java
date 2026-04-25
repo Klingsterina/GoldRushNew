@@ -94,7 +94,7 @@ public class GoldController {
     }
 
     /**
-     * orvatakkar puts together enum directions and keycodes
+     * Puts together enum directions and keycodes
      * and sets up key event handler to update directions
      */
     private void orvatakkar() {
@@ -128,7 +128,7 @@ public class GoldController {
     }
 
     /**
-     * Raesa klukku starts the clock in accordance with level:erfidleikastig
+     * Starts the clock in accordance with level:erfidleikastig
      * When time is finished it shows the LeiklokDialog dialog
      */
     public void raesaKlukku() {
@@ -184,7 +184,7 @@ public class GoldController {
     }
 
     /**
-     * Hefja leik clears the table for a new game
+     * Clears the table for a new game
      * Generates gold
      */
     public void hefjaLeik() {
@@ -221,7 +221,7 @@ public class GoldController {
         kolatimalina.setCycleCount(Timeline.INDEFINITE);   // how long the timeline runs
         kolatimalina.play();                                // start the timeline
 
-        tonlist.play();                                     // Background tónlist byrjar að spila
+        tonlist.play();                                     // Background music starts playing
 
         if (leiktimalina != null) {
             leiktimalina.stop();
@@ -234,7 +234,7 @@ public class GoldController {
     }
 
     /**
-     * Sets erfidleikastig sets the difficulty level for the game
+     * Sets the difficulty level for the game
      *
      * @param erfidleikastig the erfidleikastig
      */

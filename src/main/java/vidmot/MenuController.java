@@ -115,7 +115,7 @@ public class MenuController {
     }
 
     /**
-     * On nyr leikur starts a new game
+     * Starts a new game
      * Calls on start game and start clock
      */
     @FXML
